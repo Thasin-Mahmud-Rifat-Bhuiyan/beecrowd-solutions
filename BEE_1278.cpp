@@ -1,23 +1,44 @@
 #include <iostream>
 #include <string>
+#include <sstream>
+#include <vector>
 using namespace std;
 
 int main() {
-  int n;
-  cin >> n;
-  cin.ignore();
+    int n;
+    bool first = true;
 
-  while (n--) {
-    string s;
-    getline(cin, s);
+    while (cin >> n && n != 0) {
+        cin.ignore();
 
-    int i = 0;
+        vector<string> lines;
+        int maxLen = 0;
 
-    while (i < s.size() && s[i] == ' ')
-      i++;
+        for (int i = 0; i < n; i++) {
+            string s, word, line;
+            getline(cin, s);
 
-    cout << s.substr(i) << endl;
-  }
+            stringstream ss(s);
 
-  return 0;
+            while (ss >> word) {
+                if (!line.empty())
+                    line += " ";
+                line += word;
+            }
+
+            lines.push_back(line);
+            maxLen = max(maxLen, (int)line.length());
+        }
+
+        if (!first)
+            cout << endl;
+
+        first = false;
+
+        for (string line : lines) {
+            cout << string(maxLen - line.length(), ' ') << line << endl;
+        }
+    }
+
+    return 0;
 }
