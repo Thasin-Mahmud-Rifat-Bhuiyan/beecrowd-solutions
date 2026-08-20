@@ -14,21 +14,23 @@ int main() {
         total += sheep[i];
     }
 
-    int i = 0;
+    int pos = 0;
     long long attacked = 0;
 
-    while (i >= 0 && i < n) {
+    while (pos >= 0 && pos < n) {
+        long long current = sheep[pos];
+
         attacked++;
 
-        if (sheep[i] > 0) {
-            sheep[i]--;
+        if (sheep[pos] > 0) {
+            sheep[pos]--;
             total--;
         }
 
-        if (sheep[i] % 2 == 0)
-            i--;
+        if (current % 2 == 1)
+            pos++;
         else
-            i++;
+            pos--;
     }
 
     cout << attacked << " " << total << endl;
