@@ -2,36 +2,36 @@
 using namespace std;
 
 int main() {
-  int n;
-  cin >> n;
+    int n;
+    cin >> n;
 
-  long long total = 0;
-  int attacked = 0;
+    long long total = 0;
+    int attacked = 0;
 
-  long long sheep[n];
+    long long sheep[n];
 
-  for (int i = 0; i < n; i++) {
-    cin >> sheep[i];
-    total += sheep[i];
-  }
-
-  int i = 0;
-
-  while (i >= 0 && i < n) {
-    attacked++;
-
-    if (sheep[i] > 0) {
-      sheep[i]--;
-      total--;
+    for (int i = 0; i < n; i++) {
+        cin >> sheep[i];
+        total += sheep[i];
     }
 
-    if ((sheep[i] + 1) % 2 == 0)
-      i--;
-    else
-      i++;
-  }
+    int i = 0;
 
-  cout << attacked << " " << total << endl;
+    while (i >= 0 && i < n) {
+        attacked++;
 
-  return 0;
+        if (sheep[i] > 0) {
+            sheep[i]--;
+            total--;
+        }
+
+        if ((sheep[i] + 1) % 2 == 0)
+            i--;
+        else
+            i++;
+    }
+
+    cout << attacked << " " << total << endl;
+
+    return 0;
 }
