@@ -1,47 +1,44 @@
 # Programming Problem Solving
 
-A collection of my programming problem-solving practice and solutions, primarily focused on **C++** and problems from **Beecrowd**.
+This repository contains my programming problem-solving practice and solutions, mainly using C++ and problems from Beecrowd.
 
-This repository is part of my journey to strengthen my programming fundamentals, logical thinking, and problem-solving skills through consistent practice.
+It documents my progress as I work on improving programming fundamentals, logical thinking, and problem-solving skills through regular practice.
 
-### Platforms
+## Overview
 
-* Beecrowd
+**Language:** C++
+**Platform:** Beecrowd
+**Problems Solved:** 144+
 
-### Language
-
-* C++
-
-### Progress
-
-**144+ problems solved**
-
-Beecrowd Profile:
+**Beecrowd Profile:**
 https://judge.beecrowd.com/en/profile/1048058
 
-### Topics
+## Topics
 
-* Basic Programming
-* Input & Output
+The problems in this repository cover a range of programming fundamentals, including:
+
+* Input and Output
 * Conditional Statements
 * Loops
 * Mathematical Problems
 * Arrays
 * Strings
 * Functions
-* Algorithms
+* Basic Algorithms
 * Problem Solving
 
-### Tracker
+## Problem Tracker
 
-The repository also includes my **PPS Tracker**, where I maintain my problem-solving progress, problem categories, and solving status.
+The repository includes a PPS Tracker that I use to organize my practice and keep track of solved problems, categories, and progress.
 
-I regularly update the tracker and add new solutions as I continue practicing.
+The tracker is updated regularly as I continue solving new problems.
 
-### Purpose
+## Purpose
 
-The main purpose of this repository is to document my programming practice, track my progress, and build a strong foundation in problem solving and competitive programming.
+The purpose of this repository is to maintain a record of my problem-solving journey and continuously improve my programming skills through practice.
+
+More problems and solutions will be added as I progress.
 
 ---
 
-**C++ • Beecrowd • Problem Solving**
+**C++ | Beecrowd | Problem Solving**
