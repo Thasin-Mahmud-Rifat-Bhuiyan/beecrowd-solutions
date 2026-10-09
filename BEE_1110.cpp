@@ -1,5 +1,6 @@
 #include <iostream>
 #include <queue>
+#include <vector>
 using namespace std;
 
 int main() {
@@ -11,23 +12,26 @@ int main() {
     for (int i = 1; i <= n; i++)
       q.push(i);
 
-    cout << "Discarded cards:";
-
-    bool first = true;
+    vector<int> discarded;
 
     while (q.size() > 1) {
-      if (!first)
-        cout << ", ";
-
-      cout << " " << q.front();
+      discarded.push_back(q.front());
       q.pop();
-      first = false;
 
       q.push(q.front());
       q.pop();
     }
 
-    cout << "\nRemaining card: " << q.front() << '\n';
+    cout << "Discarded cards:";
+
+    for (int i = 0; i < (int)discarded.size(); i++) {
+      if (i > 0)
+        cout << ", ";
+      cout << discarded[i];
+    }
+
+    cout << '\n';
+    cout << "Remaining card: " << q.front() << '\n';
   }
 
   return 0;
